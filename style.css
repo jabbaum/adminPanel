@@ -78,7 +78,7 @@ img {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    gap: 7px;
+    gap: 13px;
 }
 .side > * > * {
     width: 100%;
@@ -88,7 +88,7 @@ img {
 
 /* header settings */
  .head {
-    background-color: #f0f0f0;
+    background-color: #fff;
     display: grid;
     grid-template-rows: auto auto;
     padding: 20px 50px;
@@ -113,7 +113,7 @@ img {
     border-radius: 20px;
     min-width: 200px;
     flex-grow: 1;
-    flex-shrink: .2;
+    flex-shrink: 1;
  }
  .rightHeader {
     justify-self: end;
@@ -141,3 +141,75 @@ img {
     padding: 8px 20px;
   }
 
+/* Content Styling */
+.content {
+    padding: 30px 20px;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    gap: 20px;
+    background-color: #e2e8f0;
+}
+
+.projects {
+    display: grid;
+    grid-template: min-content / repeat(2, minmax(200px, 1fr));
+    gap: 20px;
+}
+.projects > h3 {
+    grid-area: 
+    1 / 1 /
+    2 / 3;
+}
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 7px;
+    border-left: 7px solid #622773;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cardTitle {
+    font-weight: bold;
+}
+.cardControls {
+    align-self: flex-end;
+}
+
+/* content sidebar settings */
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rightSide  > div {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rsWidget> div:not(:last-child) {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #000;
+}
+.rightSide h4 {
+    font-weight: bold;
+}
+.widgetItem {
+    display: flex;
+    gap: 15px;
+}
+.widgetItem img {
+    width: 40px;
+}
+.widgetItem > div > p:last-child {
+    color: #69696a;
+}
+
+/* footer settings */
+.foot {
+    text-align: center;
+    padding: 10px;
+}
